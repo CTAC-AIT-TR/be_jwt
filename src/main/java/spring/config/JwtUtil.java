@@ -53,6 +53,7 @@ public class JwtUtil {
             throw e;
         }
     }
+
     public String resolveToken(HttpServletRequest request) {
         String bearerToken = request.getHeader(TOKEN_HEADER);
         if (bearerToken != null && bearerToken.startsWith(TOKEN_PREFIX)) {
